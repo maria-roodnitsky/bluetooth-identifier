@@ -65,6 +65,9 @@ public class DeviceControlActivity extends Activity {
     private final String LIST_NAME = "NAME";
     private final String LIST_UUID = "UUID";
 
+    //Additions
+    private TextView mModel;
+
     // Code to manage Service lifecycle.
     private final ServiceConnection mServiceConnection = new ServiceConnection() {
 
@@ -76,7 +79,11 @@ public class DeviceControlActivity extends Activity {
                 finish();
             }
             // Automatically connects to the device upon successful start-up initialization.
-            mBluetoothLeService.connect(mDeviceAddress);
+            //boolean connection = mBluetoothLeService.connect(mDeviceAddress);
+            //Log.d("Maria", String.valueOf(connection));
+
+            //if (!connection)
+            //   Log.d("Maria", "connection failed mrp");
         }
 
         @Override
@@ -108,6 +115,7 @@ public class DeviceControlActivity extends Activity {
                 // Show all the supported services and characteristics on the user interface.
                 displayGattServices(mBluetoothLeService.getSupportedGattServices());
             } else if (BluetoothLeService.ACTION_DATA_AVAILABLE.equals(action)) {
+                Log.d("from update reciever", action);
                 displayData(intent.getStringExtra(BluetoothLeService.EXTRA_DATA));
             }
         }
@@ -122,27 +130,93 @@ public class DeviceControlActivity extends Activity {
                 @Override
                 public boolean onChildClick(ExpandableListView parent, View v, int groupPosition,
                                             int childPosition, long id) {
+
+                    // I need group 0, child 1
+                    //runs through 1-6 every time a child is clicked. The "bluetoothgatt set characteristic
+                    //notification" comes between 4 and 5
                     if (mGattCharacteristics != null) {
                         final BluetoothGattCharacteristic characteristic =
                                 mGattCharacteristics.get(groupPosition).get(childPosition);
+
+                        BluetoothGattCharacteristic marias_thing =
+                                mGattCharacteristics.get(0).get(1);
+
+                        mBluetoothLeService.setCharacteristicNotification(
+                                marias_thing, true);
+
+                        Log.d("listener", "mrp notified?");
+                        final byte[] data = marias_thing.getValue();
+
+                        if (data != null && data.length > 0) {
+                            Log.d("listener", "in hope");
+                            final StringBuilder stringBuilder = new StringBuilder(data.length);
+                            for (byte byteChar : data) {
+                                stringBuilder.append(String.format("%02X ", byteChar));
+                            }
+                            String stringversion = stringBuilder.toString();
+                            Log.d("sud", stringversion);
+                            String nospace = stringversion.replaceAll("\\s", "");
+                            String result = "";
+                            char[] charArray = nospace.toCharArray();
+                            for(int i = 0; i < charArray.length; i=i+2) {
+                                String st = ""+charArray[i]+""+charArray[i+1];
+                                char ch = (char)Integer.parseInt(st, 16);
+                                result += ch;
+                            }
+                            //displayModel(result);
+                        }
+
+
+
+//                        //evidently this does not work
+//                        try{
+//                            Log.d("listener", marias_thing.getStringValue(0));
+//                        }
+//                        catch(Exception e){
+//                            Log.d("listener", "0");
+//                        }
+//                        try{
+//                            Log.d("listener", marias_thing.getStringValue(1));
+//                        }
+//                        catch(Exception e){
+//                            Log.d("listener", "1");
+//                        }
+//                        try{
+//                            Log.d("listener", marias_thing.getStringValue(2));
+//                        }
+//                        catch(Exception e){
+//                            Log.d("listener", "2");
+//                        }
+
+                        Log.d("listener", marias_thing.toString());
+
+                        Log.d("listener", "here1");
+                        Log.d("listener", characteristic.toString());
                         final int charaProp = characteristic.getProperties();
+                        Log.d("listener", String.valueOf(charaProp));
                         if ((charaProp | BluetoothGattCharacteristic.PROPERTY_READ) > 0) {
                             // If there is an active notification on a characteristic, clear
                             // it first so it doesn't update the data field on the user interface.
                             if (mNotifyCharacteristic != null) {
+                                Log.d("listener", "here2");
                                 mBluetoothLeService.setCharacteristicNotification(
                                         mNotifyCharacteristic, false);
                                 mNotifyCharacteristic = null;
+                                Log.d("listener", "here3");
                             }
                             mBluetoothLeService.readCharacteristic(characteristic);
                         }
                         if ((charaProp | BluetoothGattCharacteristic.PROPERTY_NOTIFY) > 0) {
+                            Log.d("listener", "here4");
                             mNotifyCharacteristic = characteristic;
                             mBluetoothLeService.setCharacteristicNotification(
                                     characteristic, true);
+                            Log.d("listener", "here5");
                         }
+                        Log.d("listener", "here6");
                         return true;
                     }
+                    Log.d("listener", "here7");
                     return false;
                 }
     };
@@ -167,6 +241,9 @@ public class DeviceControlActivity extends Activity {
         mGattServicesList.setOnChildClickListener(servicesListClickListner);
         mConnectionState = (TextView) findViewById(R.id.connection_state);
         mDataField = (TextView) findViewById(R.id.data_value);
+        // working
+        mModel = (TextView)findViewById(R.id.model_value);
+
 
         getActionBar().setTitle(mDeviceName);
         getActionBar().setDisplayHomeAsUpEnabled(true);
@@ -178,9 +255,11 @@ public class DeviceControlActivity extends Activity {
     protected void onResume() {
         super.onResume();
         registerReceiver(mGattUpdateReceiver, makeGattUpdateIntentFilter());
+        //not triggered by selection
+        Log.d("hi", "maria maria");
         if (mBluetoothLeService != null) {
             final boolean result = mBluetoothLeService.connect(mDeviceAddress);
-            Log.d(TAG, "Connect request result=" + result);
+            Log.d("Mariaisawesome", "Connect request result=" + result);
         }
     }
 
@@ -212,17 +291,24 @@ public class DeviceControlActivity extends Activity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        //appears to only be useful for connecting to a device (or trying; not my intention)
+        Log.d("inside of selected", "0");
         switch(item.getItemId()) {
             case R.id.menu_connect:
-                mBluetoothLeService.connect(mDeviceAddress);
+                boolean connection = mBluetoothLeService.connect(mDeviceAddress);
+                Log.d("connection status", String.valueOf(connection));
+                Log.d("inside of selected", "1");
                 return true;
             case R.id.menu_disconnect:
                 mBluetoothLeService.disconnect();
+                Log.d("inside of selected", "2");
                 return true;
             case android.R.id.home:
                 onBackPressed();
+                Log.d("inside of selected", "3");
                 return true;
         }
+        Log.d("inside of selected", item.toString());
         return super.onOptionsItemSelected(item);
     }
 
@@ -235,11 +321,19 @@ public class DeviceControlActivity extends Activity {
         });
     }
 
+    //sets the data field
     private void displayData(String data) {
         if (data != null) {
             mDataField.setText(data);
         }
     }
+    private void displayModel(String model) {
+        if (model != null) {
+            mModel.setText(model);
+        }
+    }
+
+
 
     // Demonstrates how to iterate through the supported GATT Services/Characteristics.
     // In this sample, we populate the data structure that is bound to the ExpandableListView
@@ -258,6 +352,10 @@ public class DeviceControlActivity extends Activity {
         for (BluetoothGattService gattService : gattServices) {
             HashMap<String, String> currentServiceData = new HashMap<String, String>();
             uuid = gattService.getUuid().toString();
+            if (!uuid.equals("0000180a-0000-1000-8000-00805f9b34fb")){
+                continue;
+            }
+            Log.d("Finding Data", uuid);
             currentServiceData.put(
                     LIST_NAME, SampleGattAttributes.lookup(uuid, unknownServiceString));
             currentServiceData.put(LIST_UUID, uuid);
@@ -275,6 +373,12 @@ public class DeviceControlActivity extends Activity {
                 charas.add(gattCharacteristic);
                 HashMap<String, String> currentCharaData = new HashMap<String, String>();
                 uuid = gattCharacteristic.getUuid().toString();
+                if (!uuid.equals("00002a24-0000-1000-8000-00805f9b34fb")){
+                    Log.d("UUID", uuid);
+                }
+                else{
+                    displayModel("hello");
+                }
                 currentCharaData.put(
                         LIST_NAME, SampleGattAttributes.lookup(uuid, unknownCharaString));
                 currentCharaData.put(LIST_UUID, uuid);
@@ -282,6 +386,10 @@ public class DeviceControlActivity extends Activity {
             }
             mGattCharacteristics.add(charas);
             gattCharacteristicData.add(gattCharacteristicGroupData);
+            Log.d("mrp", "mrp1");
+            Intent intent2 = new Intent("com.example.bluetooth.le.ACTION_DATA_AVAILABLE");
+            sendBroadcast(intent2);
+            Log.d("mrp", "mrp2");
         }
 
         SimpleExpandableListAdapter gattServiceAdapter = new SimpleExpandableListAdapter(
@@ -300,10 +408,13 @@ public class DeviceControlActivity extends Activity {
 
     private static IntentFilter makeGattUpdateIntentFilter() {
         final IntentFilter intentFilter = new IntentFilter();
+        //accessed but does not provide the data I think we need because it does not update when switching between
+        Log.d("location", "in here");
         intentFilter.addAction(BluetoothLeService.ACTION_GATT_CONNECTED);
         intentFilter.addAction(BluetoothLeService.ACTION_GATT_DISCONNECTED);
         intentFilter.addAction(BluetoothLeService.ACTION_GATT_SERVICES_DISCOVERED);
         intentFilter.addAction(BluetoothLeService.ACTION_DATA_AVAILABLE);
+        Log.d("location", intentFilter.toString());
         return intentFilter;
     }
 }

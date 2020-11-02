@@ -21,11 +21,15 @@ import android.app.ListActivity;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothManager;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
+import android.content.ServiceConnection;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.IBinder;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -42,10 +46,37 @@ import java.util.ArrayList;
  * Activity for scanning and displaying available Bluetooth LE devices.
  */
 public class DeviceScanActivity extends ListActivity {
+    private static final String TAG = "Evening";
     private LeDeviceListAdapter mLeDeviceListAdapter;
     private BluetoothAdapter mBluetoothAdapter;
+    private BluetoothLeService mBluetoothLeService;
+
     private boolean mScanning;
     private Handler mHandler;
+
+    // Code to manage Service lifecycle.
+    private final ServiceConnection mServiceConnection = new ServiceConnection() {
+
+        @Override
+        public void onServiceConnected(ComponentName componentName, IBinder service) {
+            mBluetoothLeService = ((BluetoothLeService.LocalBinder) service).getService();
+            if (!mBluetoothLeService.initialize()) {
+                Log.e(TAG, "Unable to initialize Bluetooth");
+                finish();
+            }
+//            // Automatically connects to the device upon successful start-up initialization.
+//            boolean connection = mBluetoothLeService.connect(mDeviceAddress);
+//            Log.d("Maria", String.valueOf(connection));
+//
+//            if (!connection)
+//                Log.d("Maria", "connection failed mrp");
+        }
+
+        @Override
+        public void onServiceDisconnected(ComponentName componentName) {
+            mBluetoothLeService = null;
+        }
+    };
 
     private static final int REQUEST_ENABLE_BT = 1;
     // Stops scanning after 10 seconds.
@@ -76,6 +107,10 @@ public class DeviceScanActivity extends ListActivity {
             finish();
             return;
         }
+
+        Intent gattServiceIntent = new Intent(this, BluetoothLeService.class);
+        bindService(gattServiceIntent, mServiceConnection, BIND_AUTO_CREATE);
+        Log.d(TAG, mServiceConnection.toString());
     }
 
     @Override
@@ -147,6 +182,8 @@ public class DeviceScanActivity extends ListActivity {
         final BluetoothDevice device = mLeDeviceListAdapter.getDevice(position);
         if (device == null) return;
         final Intent intent = new Intent(this, DeviceControlActivity.class);
+
+        //to fix when scanning problem is solved
         intent.putExtra(DeviceControlActivity.EXTRAS_DEVICE_NAME, device.getName());
         intent.putExtra(DeviceControlActivity.EXTRAS_DEVICE_ADDRESS, device.getAddress());
         if (mScanning) {
@@ -164,6 +201,20 @@ public class DeviceScanActivity extends ListActivity {
                 public void run() {
                     mScanning = false;
                     mBluetoothAdapter.stopLeScan(mLeScanCallback);
+                    int i = 0;
+                    Log.d("Device List", String.valueOf(mLeDeviceListAdapter.mLeDevices.size()));
+                    for (BluetoothDevice device: mLeDeviceListAdapter.mLeDevices) {
+                        boolean first = mBluetoothLeService.connect(device.getAddress());
+                        boolean second = mBluetoothLeService.connect(device.getAddress());
+                        Log.d("Device List", first + " " + second);
+                        if (second) {
+                            // mLeDeviceListAdapter.removeDevice(device);
+
+                            i++;
+                            Log.d("Device List", device.toString() + " " + i);
+                        }
+                    }
+                    mLeDeviceListAdapter.notifyDataSetChanged();
                     invalidateOptionsMenu();
                 }
             }, SCAN_PERIOD);
@@ -174,6 +225,7 @@ public class DeviceScanActivity extends ListActivity {
             mScanning = false;
             mBluetoothAdapter.stopLeScan(mLeScanCallback);
         }
+
         invalidateOptionsMenu();
     }
 
@@ -191,6 +243,12 @@ public class DeviceScanActivity extends ListActivity {
         public void addDevice(BluetoothDevice device) {
             if(!mLeDevices.contains(device)) {
                 mLeDevices.add(device);
+            }
+        }
+
+        public void removeDevice(BluetoothDevice device) {
+            if(!mLeDevices.contains(device)) {
+                mLeDevices.remove(device);
             }
         }
 
@@ -252,6 +310,8 @@ public class DeviceScanActivity extends ListActivity {
             runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
+//                    boolean connection = mBluetoothLeService.connect(device.getAddress());
+//                    if (connection)
                     mLeDeviceListAdapter.addDevice(device);
                     mLeDeviceListAdapter.notifyDataSetChanged();
                 }

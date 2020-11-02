@@ -702,6 +702,7 @@ id menu_scan
 id menu_stop
 id message
 id middle
+id model_value
 id multiply
 id never
 id none
@@ -872,6 +873,7 @@ string menu_connect
 string menu_disconnect
 string menu_scan
 string menu_stop
+string model_type_label
 string no_data
 string search_menu_title
 string status_bar_notification_info_overflow
