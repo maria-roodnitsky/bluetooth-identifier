@@ -25,9 +25,11 @@ import android.bluetooth.BluetoothGattService;
 import android.bluetooth.BluetoothManager;
 import android.bluetooth.le.ScanCallback;
 import android.bluetooth.le.ScanResult;
+import android.content.BroadcastReceiver;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.ServiceConnection;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
@@ -45,7 +47,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 /**
  * Activity for scanning and displaying available Bluetooth LE devices.
@@ -60,6 +65,34 @@ public class DeviceScanActivity extends ListActivity {
 
     private boolean mScanning;
     private Handler mHandler;
+
+    // Intent filter for broadcast receiver
+    private static IntentFilter makeGattUpdateIntentFilter() {
+        final IntentFilter intentFilter = new IntentFilter();
+        //accessed but does not provide the data I think we need because it does not update when switching between
+        Log.d("location", "in here");
+        intentFilter.addAction(BluetoothLeService.ACTION_GATT_CONNECTED);
+        intentFilter.addAction(BluetoothLeService.ACTION_GATT_DISCONNECTED);
+        intentFilter.addAction(BluetoothLeService.ACTION_GATT_SERVICES_DISCOVERED);
+        intentFilter.addAction(BluetoothLeService.ACTION_DATA_AVAILABLE);
+        Log.d("location", intentFilter.toString());
+        return intentFilter;
+    }
+
+
+
+    private final BroadcastReceiver mGattUpdateReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            final String action = intent.getAction();
+            Log.d("RECEIVER IN SCAN", action);
+            if (BluetoothLeService.ACTION_DATA_AVAILABLE.equals(action)) {
+//                Log.d("from update reciever", action);
+                Log.d("RECEIVER IN SCAN", intent.getStringExtra(BluetoothLeService.EXTRA_DATA));
+//                displayData(intent.getStringExtra(BluetoothLeService.EXTRA_DATA));
+            }
+        }
+    };
 
     // Code to manage Service lifecycle.
     private final ServiceConnection mServiceConnection = new ServiceConnection() {
@@ -153,6 +186,7 @@ public class DeviceScanActivity extends ListActivity {
     @Override
     protected void onResume() {
         super.onResume();
+        registerReceiver(mGattUpdateReceiver, makeGattUpdateIntentFilter());
 
         // Ensures Bluetooth is enabled on the device.  If Bluetooth is not currently enabled,
         // fire an intent to display a dialog asking the user to grant permission to enable it.
@@ -182,6 +216,7 @@ public class DeviceScanActivity extends ListActivity {
         super.onPause();
         scanLeDevice(false);
         mLeDeviceListAdapter.clear();
+        unregisterReceiver(mGattUpdateReceiver);
     }
 
     @Override
@@ -208,7 +243,8 @@ public class DeviceScanActivity extends ListActivity {
                 public void run() {
                     mScanning = false;
                     mBluetoothAdapter.getBluetoothLeScanner().stopScan(mLeScanCallback);
-                    List<BluetoothGattService> listGatt = mBluetoothLeService.getSupportedGattServices();
+//                    List<BluetoothGattService> listGatt = mBluetoothLeService.getSupportedGattServices();
+
 //                    int i = 0;
 //                    Log.d("Device List", String.valueOf(mLeDeviceListAdapter.mLeDevices.size()));
 //                    for (BluetoothDevice device: mLeDeviceListAdapter.mLeDevices) {
@@ -304,6 +340,7 @@ public class DeviceScanActivity extends ListActivity {
     private ScanCallback mLeScanCallback = new ScanCallback() {
         @Override
         public void onScanResult(int callbackType, final ScanResult result) {
+            final Set<String> connected = new HashSet<>();
             runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
@@ -319,6 +356,71 @@ public class DeviceScanActivity extends ListActivity {
                     if (rssi > -70 && result.isConnectable()) {
                         Log.d("RSSI", String.valueOf(rssi));
                         mLeDeviceListAdapter.addDevice(device);
+//                        String device_name_2 = result.getScanRecord().getDeviceName();
+//                        try{
+//                            Log.d("DEVICE NAME", device_name_2);
+//                        }catch (Exception e){
+//
+//                        }
+                        if (!connected.contains(device_address)) {
+                            mBluetoothLeService.connect(device_address);
+                        } else {
+                            connected.add(device_address);
+                        }
+                        List<BluetoothGattService> listGatt = mBluetoothLeService.getSupportedGattServices();
+                        if (listGatt.size() > 0) {
+                            String uuid = null;
+                            ArrayList<HashMap<String, String>> gattServiceData = new ArrayList<HashMap<String, String>>();
+                            ArrayList<ArrayList<HashMap<String, String>>> gattCharacteristicData
+                                    = new ArrayList<ArrayList<HashMap<String, String>>>();
+                            mGattCharacteristics = new ArrayList<ArrayList<BluetoothGattCharacteristic>>();
+
+                            // Loops through available GATT Services.
+                            for (BluetoothGattService gattService : listGatt) {
+                                HashMap<String, String> currentServiceData = new HashMap<String, String>();
+                                uuid = gattService.getUuid().toString();
+                                if (!uuid.equals("0000180a-0000-1000-8000-00805f9b34fb")) {
+                                    continue;
+                                }
+
+                                List<BluetoothGattCharacteristic> gattCharacteristics =
+                                        gattService.getCharacteristics();
+
+                                BluetoothGattCharacteristic marias_thing = gattCharacteristics.get(1);
+                                try {
+                                    Log.d("CHARAC", marias_thing.toString());
+                                    Log.d("CHARAC", "HELLO");
+                                    final byte[] data = marias_thing.getValue();
+                                    if (data == null) {
+                                        Log.d("CHARAC", "womp");
+                                    }
+                                    Log.d("CHARAC", data.length + "");
+                                    if (data != null && data.length > 0) {
+//                                        Log.d("listener", "in hope");
+                                        final StringBuilder stringBuilder = new StringBuilder(data.length);
+                                        for (byte byteChar : data) {
+                                            stringBuilder.append(String.format("%02X ", byteChar));
+                                        }
+                                        String stringversion = stringBuilder.toString();
+                                        Log.d("sud", stringversion);
+                                        String nospace = stringversion.replaceAll("\\s", "");
+                                        String result = "";
+                                        char[] charArray = nospace.toCharArray();
+                                        for(int i = 0; i < charArray.length; i=i+2) {
+                                            String st = ""+charArray[i]+""+charArray[i+1];
+                                            char ch = (char)Integer.parseInt(st, 16);
+                                            result += ch;
+                                        }
+                                         Log.d("NAME", result);
+                                    }
+                                } catch (Exception e) {
+
+                                }
+                            }
+                        }
+
+
+
                     }
                     mLeDeviceListAdapter.notifyDataSetChanged();
                 }
