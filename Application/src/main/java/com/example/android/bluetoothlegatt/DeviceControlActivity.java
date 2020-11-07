@@ -163,7 +163,7 @@ public class DeviceControlActivity extends Activity {
                                 char ch = (char)Integer.parseInt(st, 16);
                                 result += ch;
                             }
-                            //displayModel(result);
+                            // Log.d("Mrp", result);
                         }
 
 
