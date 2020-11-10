@@ -73,6 +73,8 @@ public class DeviceScanActivity extends ListActivity {
     private final String LIST_NAME = "NAME";
     private final String LIST_UUID = "UUID";
 
+    private Set<String> seenDevices = new HashSet<>();
+
     // Intent filter for broadcast receiver
     private static IntentFilter makeGattUpdateIntentFilter() {
         final IntentFilter intentFilter = new IntentFilter();
@@ -111,8 +113,10 @@ public class DeviceScanActivity extends ListActivity {
     };
 
     private void grabData(String stringExtra) {
-        models.add(stringExtra);
-        Log.d("FINALLY", models.toString());
+        if (stringExtra != null) {
+            models.add(stringExtra);
+        }
+        Log.d("FINALLY", models.toString() + " " + models.size());
     }
 
     private void workGattServices(List<BluetoothGattService> gattServices) {
@@ -423,22 +427,33 @@ public class DeviceScanActivity extends ListActivity {
 //                    Log.d("ENTERING SCAN", "SCANNED " + device.toString());
 
                     int rssi = result.getRssi();
-
-
                     String device_name = device.getName();
 
                     String device_address = device.getAddress();
                     if (rssi > -70 && result.isConnectable()) {
                         Log.d("RSSI", String.valueOf(rssi));
+                        if (!seenDevices.contains(device_address)){
+                            Log.d("MAC", "hey, we have NOT seen you!");
+                        }
+
                         mLeDeviceListAdapter.addDevice(device);
+                        seenDevices.add(device_address);
+                        Log.d("MAC", seenDevices.toString() + " " + seenDevices.size());
+
+//                        if (device_address != null){
+//                            Log.d("MAC MAYBE", device_address);
+//                        }
 
                         if (!connected.contains(device_address)) {
                             mBluetoothLeService.connect(device_address);
-                        } else {
                             connected.add(device_address);
+                        } else {
+                            Log.d("MAC", "returning, found" + device_address);
+                            return;
                         }
                         List<BluetoothGattService> listGatt = mBluetoothLeService.getSupportedGattServices();
-                        if (listGatt != null && listGatt.size() != 0) {
+                        // Added isEmpty to prevent
+                        if (listGatt != null && listGatt.size() != 0 && !mGattCharacteristics.isEmpty()) {
                             final BluetoothGattCharacteristic characteristic =
                                     mGattCharacteristics.get(0).get(1);
 

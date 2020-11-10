@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Sudha\\AndroidStudioProjects\\bluetooth-identifier\\Application\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
+            "outputFile": "C:\\Users\\Maria\\AndroidStudioProjects\\bluetooth-identifier\\Application\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Sudha\\.gradle\\caches\\transforms-2\\files-2.1\\a80af634189e8f44e9fd8bfb57e87776\\res\\values-night-v8\\values-night-v8.xml",
+                    "source": "C:\\Users\\Maria\\.gradle\\caches\\transforms-2\\files-2.1\\38bde169bc8be3350ed3e044894c4e9b\\res\\values-night-v8\\values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8",
                         "startColumns": "4,4,4,4,4,4,4",

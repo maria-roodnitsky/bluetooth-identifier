@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Sudha\\AndroidStudioProjects\\bluetooth-identifier\\Application\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
+            "outputFile": "C:\\Users\\Maria\\AndroidStudioProjects\\bluetooth-identifier\\Application\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Sudha\\.gradle\\caches\\transforms-2\\files-2.1\\c38266dcb353a866f76c3a2313b5fdf5\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Maria\\.gradle\\caches\\transforms-2\\files-2.1\\ff994e3960fd1f3e7fd322d0b274879b\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Sudha\\.gradle\\caches\\transforms-2\\files-2.1\\a80af634189e8f44e9fd8bfb57e87776\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Maria\\.gradle\\caches\\transforms-2\\files-2.1\\38bde169bc8be3350ed3e044894c4e9b\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

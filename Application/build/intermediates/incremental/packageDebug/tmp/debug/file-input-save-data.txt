@@ -1,11 +1,11 @@
 #Internal package file, do not edit.
-#Mon Nov 09 03:11:58 EST 2020
-1.base=C\:\\Users\\Sudha\\AndroidStudioProjects\\bluetooth-identifier\\Application\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out
+#Mon Nov 09 21:07:42 EST 2020
+1.base=C\:\\Users\\Maria\\AndroidStudioProjects\\bluetooth-identifier\\Application\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out
 0.baseType=DIRECTORY
 1.baseType=DIRECTORY
 count=2
 1.set=DEX
 0.path=classes.dex
 0.set=DEX
-0.base=C\:\\Users\\Sudha\\AndroidStudioProjects\\bluetooth-identifier\\Application\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out
+0.base=C\:\\Users\\Maria\\AndroidStudioProjects\\bluetooth-identifier\\Application\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out
 1.path=classes.dex
