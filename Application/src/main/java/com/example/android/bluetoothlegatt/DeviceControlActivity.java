@@ -46,6 +46,7 @@ import java.util.List;
  * Bluetooth LE API.
  */
 public class DeviceControlActivity extends Activity {
+    public static final String DEVICES = "DEVICES";
     private final static String TAG = DeviceControlActivity.class.getSimpleName();
 
     public static final String EXTRAS_DEVICE_NAME = "DEVICE_NAME";
@@ -102,6 +103,7 @@ public class DeviceControlActivity extends Activity {
         @Override
         public void onReceive(Context context, Intent intent) {
             final String action = intent.getAction();
+            Log.d("DEVICE_CONTROL_ACTIVITY", action);
             if (BluetoothLeService.ACTION_GATT_CONNECTED.equals(action)) {
                 mConnected = true;
                 updateConnectionState(R.string.connected);
@@ -115,7 +117,7 @@ public class DeviceControlActivity extends Activity {
                 // Show all the supported services and characteristics on the user interface.
                 displayGattServices(mBluetoothLeService.getSupportedGattServices());
             } else if (BluetoothLeService.ACTION_DATA_AVAILABLE.equals(action)) {
-                Log.d("from update reciever", action);
+
                 displayData(intent.getStringExtra(BluetoothLeService.EXTRA_DATA));
             }
         }
@@ -138,85 +140,32 @@ public class DeviceControlActivity extends Activity {
                         final BluetoothGattCharacteristic characteristic =
                                 mGattCharacteristics.get(groupPosition).get(childPosition);
 
-                        BluetoothGattCharacteristic marias_thing =
-                                mGattCharacteristics.get(0).get(1);
-
-                        mBluetoothLeService.setCharacteristicNotification(
-                                marias_thing, true);
-
-                        Log.d("listener", "mrp notified?");
-                        final byte[] data = marias_thing.getValue();
-
-                        if (data != null && data.length > 0) {
-                            Log.d("listener", "in hope");
-                            final StringBuilder stringBuilder = new StringBuilder(data.length);
-                            for (byte byteChar : data) {
-                                stringBuilder.append(String.format("%02X ", byteChar));
-                            }
-                            String stringversion = stringBuilder.toString();
-                            Log.d("sud", stringversion);
-                            String nospace = stringversion.replaceAll("\\s", "");
-                            String result = "";
-                            char[] charArray = nospace.toCharArray();
-                            for(int i = 0; i < charArray.length; i=i+2) {
-                                String st = ""+charArray[i]+""+charArray[i+1];
-                                char ch = (char)Integer.parseInt(st, 16);
-                                result += ch;
-                            }
-                            // Log.d("Mrp", result);
-                        }
-
-
-
-//                        //evidently this does not work
-//                        try{
-//                            Log.d("listener", marias_thing.getStringValue(0));
-//                        }
-//                        catch(Exception e){
-//                            Log.d("listener", "0");
-//                        }
-//                        try{
-//                            Log.d("listener", marias_thing.getStringValue(1));
-//                        }
-//                        catch(Exception e){
-//                            Log.d("listener", "1");
-//                        }
-//                        try{
-//                            Log.d("listener", marias_thing.getStringValue(2));
-//                        }
-//                        catch(Exception e){
-//                            Log.d("listener", "2");
-//                        }
-
-                        Log.d("listener", marias_thing.toString());
-
-                        Log.d("listener", "here1");
-                        Log.d("listener", characteristic.toString());
+//                        Log.d("listener", characteristic.toString());
                         final int charaProp = characteristic.getProperties();
-                        Log.d("listener", String.valueOf(charaProp));
+//                        Log.d("listener", String.valueOf(charaProp));
                         if ((charaProp | BluetoothGattCharacteristic.PROPERTY_READ) > 0) {
                             // If there is an active notification on a characteristic, clear
                             // it first so it doesn't update the data field on the user interface.
                             if (mNotifyCharacteristic != null) {
-                                Log.d("listener", "here2");
+//                                Log.d("listener", "here2");
                                 mBluetoothLeService.setCharacteristicNotification(
                                         mNotifyCharacteristic, false);
                                 mNotifyCharacteristic = null;
-                                Log.d("listener", "here3");
+//                                Log.d("listener", "here3");
                             }
                             mBluetoothLeService.readCharacteristic(characteristic);
                         }
                         if ((charaProp | BluetoothGattCharacteristic.PROPERTY_NOTIFY) > 0) {
-                            Log.d("listener", "here4");
+//                            Log.d("listener", "here4");
                             mNotifyCharacteristic = characteristic;
                             mBluetoothLeService.setCharacteristicNotification(
                                     characteristic, true);
-                            Log.d("listener", "here5");
+//                            Log.d("listener", "here5");
                         }
-                        Log.d("listener", "here6");
+//                        Log.d("listener", "here6");
                         return true;
                     }
-                    Log.d("listener", "here7");
+//                    Log.d("listener", "here7");
                     return false;
                 }
     };

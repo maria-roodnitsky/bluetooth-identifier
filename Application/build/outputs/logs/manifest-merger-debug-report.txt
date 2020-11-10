@@ -1,185 +1,185 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:20:1-52:12
-INJECTED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:20:1-52:12
-INJECTED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:20:1-52:12
-MERGED from [com.android.support:support-v13:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\af425f050112506173ed731a068fefdc\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-v4:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\7d67496ba8c9e72d1103012d1dd747ea\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\2e09978c77b1f6d5e16b462b927503d6\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\38bde169bc8be3350ed3e044894c4e9b\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\94b52b95656b2c62d42c682972d29383\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\7bca2edcee01337416b5605205a828ed\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\4aacf0b2de9cdc4336cdf5b189051efb\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\b7ba4f6ebc7d88934d6a7ce89e1645b8\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\842ec7ac786de3b26dbcff55200265a4\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\d54c0979d3a779db4244d807bc6a7579\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:loader:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\489c817b373583cdb34812942bbcd20b\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\edfa74d62b52bb9b1d543f26b3e4b1fb\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\d9707bc1b65f614683d2d7edabf7cd5f\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\db6b5cd69fce07d47d960281e15ee1f0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\7a1ee32ccb9c408cdc031d29b612d33c\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:customview:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\594f4f9156ac2038ee1989f4456069cc\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\6779606a96e751651841f6c7b0eb228d\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\439874bebd351f028d5e21fc375315c9\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\ff994e3960fd1f3e7fd322d0b274879b\AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\c09de7225afe93f1f1a9cba117523202\AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\d9fa47167ad50f6d39d3082338b61cae\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\c8131fd79c12fb44afe3c7a40d913075\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\9e85b91c0a8d85bc2f0934fb6f53e938\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\fce2e831fcbf43643896b6754cd42e85\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:print:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\e461d028fbb76ee6214e6d7f2d1bfde9\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\106ebc9c4b6775da27655ca08f708397\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\713214048eed02f24d49825e8f8d40bf\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\5ecfecac45d8aa249ed683df3d963cc1\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\312c4273015c474eacd62370d27b2762\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\2c4c3b704bcd89355560166d9a9a9ba2\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:20:1-52:12
-INJECTED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:20:1-52:12
+ADDED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml:20:1-52:12
+INJECTED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml:20:1-52:12
+INJECTED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml:20:1-52:12
+MERGED from [com.android.support:support-v13:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\a2a1b3fa41f78622d3a1f8ea38643a72\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\52e927c9a15ba0cf7748cb9f09fcc027\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\d2541faa01f2be6c8bb62fc9c3d01bf1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\a80af634189e8f44e9fd8bfb57e87776\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\6b160d5226340bd3919e7ee43fa69818\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\233ff360f2ef941c5e5574f3e8dcde50\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\effb67eb8539275baba506aa24c909c2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\7697371dd5e95710fda8e4f70ace8770\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\0b9fa2560c9267aae0deedd595f5cbf7\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\dad12bf16164f9c2fd5c0ca353f9e590\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\66c3a416c912a0de535dd9900028663c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\e0fceafd7d4100db5b19731ebd9a28ec\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\38455ab03ee41608bd384f76de6317e2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\0dc6e54b6248043a8d708908aaf46e1b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\1cc9534e0d3bf6994424fd5511f2458e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\74687995ab1f596b83b77e29c47fcbc5\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\6db91bd33b0059f530fbf4ef24c52fb4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\096d96201963e7e575250f9b07a66bf2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\c38266dcb353a866f76c3a2313b5fdf5\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\0680a38d3c3617d55fda62b6a7bbfe5d\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\f84c2017b57cfc4ac8344b7ea4c09362\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\c34320f8b643708fa88ef2ec19fd86de\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\39a4e0a1cc8ac0ae2f24f960a1594196\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\44b9221aeb8b7c7b23054eb6f0684386\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\dc951bb22cf092bda2c496f6cb4bcb75\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\0d02eee4dea02551a5dc41aa6b7be3b9\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\6d77cb75a138eaaee1630d0f0ec521be\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\fda1ee3db6071d977076aff0cf5ecc72\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\f854d71b06aba25b65b38e8dcf1250d9\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\9661e16e1f6a27dd3c4a04ac8b4d363d\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml:20:1-52:12
+INJECTED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml:20:1-52:12
 	package
-		ADDED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:21:5-50
+		ADDED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml:21:5-50
 	android:versionName
-		ADDED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:23:5-30
-		INJECTED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml:23:5-30
+		INJECTED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:20:11-69
+		ADDED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml:20:11-69
 	android:versionCode
-		ADDED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:22:5-28
-		INJECTED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml:22:5-28
+		INJECTED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml
 uses-feature#android.hardware.bluetooth_le
-ADDED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:31:5-89
+ADDED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml:31:5-89
 	android:required
-		ADDED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:31:64-87
+		ADDED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml:31:64-87
 	android:name
-		ADDED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:31:19-63
+		ADDED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml:31:19-63
 uses-permission#android.permission.BLUETOOTH
-ADDED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:33:5-67
+ADDED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml:33:5-67
 	android:name
-		ADDED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:33:22-65
+		ADDED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml:33:22-65
 uses-permission#android.permission.BLUETOOTH_ADMIN
-ADDED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:34:5-73
+ADDED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml:34:5-73
 	android:name
-		ADDED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:34:22-71
+		ADDED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml:34:22-71
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:35:5-78
+ADDED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml:35:5-78
 	android:name
-		ADDED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:35:22-76
+		ADDED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml:35:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:36:5-80
+ADDED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml:36:5-80
 	android:name
-		ADDED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:36:22-78
+		ADDED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml:36:22-78
 application
-ADDED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:38:5-50:19
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\ff994e3960fd1f3e7fd322d0b274879b\AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\ff994e3960fd1f3e7fd322d0b274879b\AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\c09de7225afe93f1f1a9cba117523202\AndroidManifest.xml:22:5-23:19
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\c09de7225afe93f1f1a9cba117523202\AndroidManifest.xml:22:5-23:19
+ADDED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml:38:5-50:19
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\c38266dcb353a866f76c3a2313b5fdf5\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\c38266dcb353a866f76c3a2313b5fdf5\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\0680a38d3c3617d55fda62b6a7bbfe5d\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\0680a38d3c3617d55fda62b6a7bbfe5d\AndroidManifest.xml:22:5-23:19
 	android:appComponentFactory
-		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\ff994e3960fd1f3e7fd322d0b274879b\AndroidManifest.xml:22:18-91
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\c38266dcb353a866f76c3a2313b5fdf5\AndroidManifest.xml:22:18-91
 	android:label
-		ADDED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:38:18-50
+		ADDED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml:38:18-50
 	android:icon
-		ADDED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:39:9-45
+		ADDED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml:39:9-45
 	android:theme
-		ADDED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:40:9-56
+		ADDED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml:40:9-56
 activity#com.example.android.bluetoothlegatt.DeviceScanActivity
-ADDED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:41:9-47:20
+ADDED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml:41:9-47:20
 	android:label
-		ADDED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:42:13-45
+		ADDED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml:42:13-45
 	android:name
-		ADDED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:41:19-53
+		ADDED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml:41:19-53
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:43:13-46:29
+ADDED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml:43:13-46:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:44:17-68
+ADDED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml:44:17-68
 	android:name
-		ADDED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:44:25-66
+		ADDED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml:44:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:45:17-76
+ADDED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml:45:17-76
 	android:name
-		ADDED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:45:27-74
+		ADDED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml:45:27-74
 activity#com.example.android.bluetoothlegatt.DeviceControlActivity
-ADDED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:48:9-58
+ADDED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml:48:9-58
 	android:name
-		ADDED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:48:19-56
+		ADDED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml:48:19-56
 service#com.example.android.bluetoothlegatt.BluetoothLeService
-ADDED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:49:9-77
+ADDED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml:49:9-77
 	android:enabled
-		ADDED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:49:53-75
+		ADDED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml:49:53-75
 	android:name
-		ADDED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:49:18-52
+		ADDED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml:49:18-52
 uses-sdk
-INJECTED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml
-MERGED from [com.android.support:support-v13:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\af425f050112506173ed731a068fefdc\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v13:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\af425f050112506173ed731a068fefdc\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\7d67496ba8c9e72d1103012d1dd747ea\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\7d67496ba8c9e72d1103012d1dd747ea\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\2e09978c77b1f6d5e16b462b927503d6\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\2e09978c77b1f6d5e16b462b927503d6\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\38bde169bc8be3350ed3e044894c4e9b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\38bde169bc8be3350ed3e044894c4e9b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\94b52b95656b2c62d42c682972d29383\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\94b52b95656b2c62d42c682972d29383\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\7bca2edcee01337416b5605205a828ed\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\7bca2edcee01337416b5605205a828ed\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\4aacf0b2de9cdc4336cdf5b189051efb\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\4aacf0b2de9cdc4336cdf5b189051efb\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\b7ba4f6ebc7d88934d6a7ce89e1645b8\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\b7ba4f6ebc7d88934d6a7ce89e1645b8\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\842ec7ac786de3b26dbcff55200265a4\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\842ec7ac786de3b26dbcff55200265a4\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\d54c0979d3a779db4244d807bc6a7579\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\d54c0979d3a779db4244d807bc6a7579\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\489c817b373583cdb34812942bbcd20b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\489c817b373583cdb34812942bbcd20b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\edfa74d62b52bb9b1d543f26b3e4b1fb\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\edfa74d62b52bb9b1d543f26b3e4b1fb\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\d9707bc1b65f614683d2d7edabf7cd5f\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\d9707bc1b65f614683d2d7edabf7cd5f\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\db6b5cd69fce07d47d960281e15ee1f0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\db6b5cd69fce07d47d960281e15ee1f0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\7a1ee32ccb9c408cdc031d29b612d33c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\7a1ee32ccb9c408cdc031d29b612d33c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\594f4f9156ac2038ee1989f4456069cc\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\594f4f9156ac2038ee1989f4456069cc\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\6779606a96e751651841f6c7b0eb228d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\6779606a96e751651841f6c7b0eb228d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\439874bebd351f028d5e21fc375315c9\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\439874bebd351f028d5e21fc375315c9\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\ff994e3960fd1f3e7fd322d0b274879b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\ff994e3960fd1f3e7fd322d0b274879b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\c09de7225afe93f1f1a9cba117523202\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\c09de7225afe93f1f1a9cba117523202\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\d9fa47167ad50f6d39d3082338b61cae\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\d9fa47167ad50f6d39d3082338b61cae\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\c8131fd79c12fb44afe3c7a40d913075\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\c8131fd79c12fb44afe3c7a40d913075\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\9e85b91c0a8d85bc2f0934fb6f53e938\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\9e85b91c0a8d85bc2f0934fb6f53e938\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\fce2e831fcbf43643896b6754cd42e85\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\fce2e831fcbf43643896b6754cd42e85\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\e461d028fbb76ee6214e6d7f2d1bfde9\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\e461d028fbb76ee6214e6d7f2d1bfde9\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\106ebc9c4b6775da27655ca08f708397\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\106ebc9c4b6775da27655ca08f708397\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\713214048eed02f24d49825e8f8d40bf\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\713214048eed02f24d49825e8f8d40bf\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\5ecfecac45d8aa249ed683df3d963cc1\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\5ecfecac45d8aa249ed683df3d963cc1\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\312c4273015c474eacd62370d27b2762\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\312c4273015c474eacd62370d27b2762\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\2c4c3b704bcd89355560166d9a9a9ba2\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Maria\.gradle\caches\transforms-2\files-2.1\2c4c3b704bcd89355560166d9a9a9ba2\AndroidManifest.xml:20:5-44
-INJECTED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml
+MERGED from [com.android.support:support-v13:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\a2a1b3fa41f78622d3a1f8ea38643a72\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v13:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\a2a1b3fa41f78622d3a1f8ea38643a72\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\52e927c9a15ba0cf7748cb9f09fcc027\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\52e927c9a15ba0cf7748cb9f09fcc027\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\d2541faa01f2be6c8bb62fc9c3d01bf1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\d2541faa01f2be6c8bb62fc9c3d01bf1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\a80af634189e8f44e9fd8bfb57e87776\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\a80af634189e8f44e9fd8bfb57e87776\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\6b160d5226340bd3919e7ee43fa69818\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\6b160d5226340bd3919e7ee43fa69818\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\233ff360f2ef941c5e5574f3e8dcde50\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\233ff360f2ef941c5e5574f3e8dcde50\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\effb67eb8539275baba506aa24c909c2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\effb67eb8539275baba506aa24c909c2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\7697371dd5e95710fda8e4f70ace8770\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\7697371dd5e95710fda8e4f70ace8770\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\0b9fa2560c9267aae0deedd595f5cbf7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\0b9fa2560c9267aae0deedd595f5cbf7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\dad12bf16164f9c2fd5c0ca353f9e590\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\dad12bf16164f9c2fd5c0ca353f9e590\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\66c3a416c912a0de535dd9900028663c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\66c3a416c912a0de535dd9900028663c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\e0fceafd7d4100db5b19731ebd9a28ec\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\e0fceafd7d4100db5b19731ebd9a28ec\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\38455ab03ee41608bd384f76de6317e2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\38455ab03ee41608bd384f76de6317e2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\0dc6e54b6248043a8d708908aaf46e1b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\0dc6e54b6248043a8d708908aaf46e1b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\1cc9534e0d3bf6994424fd5511f2458e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\1cc9534e0d3bf6994424fd5511f2458e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\74687995ab1f596b83b77e29c47fcbc5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\74687995ab1f596b83b77e29c47fcbc5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\6db91bd33b0059f530fbf4ef24c52fb4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\6db91bd33b0059f530fbf4ef24c52fb4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\096d96201963e7e575250f9b07a66bf2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\096d96201963e7e575250f9b07a66bf2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\c38266dcb353a866f76c3a2313b5fdf5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\c38266dcb353a866f76c3a2313b5fdf5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\0680a38d3c3617d55fda62b6a7bbfe5d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\0680a38d3c3617d55fda62b6a7bbfe5d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\f84c2017b57cfc4ac8344b7ea4c09362\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\f84c2017b57cfc4ac8344b7ea4c09362\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\c34320f8b643708fa88ef2ec19fd86de\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\c34320f8b643708fa88ef2ec19fd86de\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\39a4e0a1cc8ac0ae2f24f960a1594196\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\39a4e0a1cc8ac0ae2f24f960a1594196\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\44b9221aeb8b7c7b23054eb6f0684386\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\44b9221aeb8b7c7b23054eb6f0684386\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\dc951bb22cf092bda2c496f6cb4bcb75\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\dc951bb22cf092bda2c496f6cb4bcb75\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\0d02eee4dea02551a5dc41aa6b7be3b9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\0d02eee4dea02551a5dc41aa6b7be3b9\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\6d77cb75a138eaaee1630d0f0ec521be\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\6d77cb75a138eaaee1630d0f0ec521be\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\fda1ee3db6071d977076aff0cf5ecc72\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\fda1ee3db6071d977076aff0cf5ecc72\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\f854d71b06aba25b65b38e8dcf1250d9\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\f854d71b06aba25b65b38e8dcf1250d9\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\9661e16e1f6a27dd3c4a04ac8b4d363d\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Sudha\.gradle\caches\transforms-2\files-2.1\9661e16e1f6a27dd3c4a04ac8b4d363d\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Maria\AndroidStudioProjects\connectivity-samples-main\BluetoothLeGatt\Application\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Sudha\AndroidStudioProjects\bluetooth-identifier\Application\src\main\AndroidManifest.xml

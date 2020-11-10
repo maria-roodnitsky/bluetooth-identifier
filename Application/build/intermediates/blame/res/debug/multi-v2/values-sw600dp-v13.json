@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Maria\\AndroidStudioProjects\\connectivity-samples-main\\BluetoothLeGatt\\Application\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+            "outputFile": "C:\\Users\\Sudha\\AndroidStudioProjects\\bluetooth-identifier\\Application\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Maria\\AndroidStudioProjects\\connectivity-samples-main\\BluetoothLeGatt\\Application\\src\\main\\res\\values-sw600dp\\template-dimens.xml",
-                    "from": {
-                        "startLines": "20,21",
-                        "startColumns": "4,4",
-                        "startOffsets": "656,724",
-                        "endColumns": "67,67",
-                        "endOffsets": "719,787"
-                    },
-                    "to": {
-                        "startLines": "10,11",
-                        "startColumns": "4,4",
-                        "startOffsets": "611,679",
-                        "endColumns": "67,67",
-                        "endOffsets": "674,742"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Maria\\.gradle\\caches\\transforms-2\\files-2.1\\38bde169bc8be3350ed3e044894c4e9b\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\Sudha\\.gradle\\caches\\transforms-2\\files-2.1\\a80af634189e8f44e9fd8bfb57e87776\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -31,14 +14,14 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Maria\\AndroidStudioProjects\\connectivity-samples-main\\BluetoothLeGatt\\Application\\src\\main\\res\\values-sw600dp\\template-styles.xml",
+                    "source": "C:\\Users\\Sudha\\AndroidStudioProjects\\bluetooth-identifier\\Application\\src\\main\\res\\values-sw600dp\\template-styles.xml",
                     "from": {
                         "startLines": "18",
                         "startColumns": "4",
-                        "startOffsets": "621",
+                        "startOffsets": "639",
                         "endLines": "22",
                         "endColumns": "12",
-                        "endOffsets": "861"
+                        "endOffsets": "883"
                     },
                     "to": {
                         "startLines": "12",
@@ -47,6 +30,23 @@
                         "endLines": "16",
                         "endColumns": "12",
                         "endOffsets": "987"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Sudha\\AndroidStudioProjects\\bluetooth-identifier\\Application\\src\\main\\res\\values-sw600dp\\template-dimens.xml",
+                    "from": {
+                        "startLines": "20,21",
+                        "startColumns": "4,4",
+                        "startOffsets": "676,745",
+                        "endColumns": "67,67",
+                        "endOffsets": "739,808"
+                    },
+                    "to": {
+                        "startLines": "10,11",
+                        "startColumns": "4,4",
+                        "startOffsets": "611,679",
+                        "endColumns": "67,67",
+                        "endOffsets": "674,742"
                     }
                 }
             ]
