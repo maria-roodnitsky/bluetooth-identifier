@@ -20,10 +20,14 @@
           android:showAsAction="ifRoom"/>
     <item android:id="@+id/menu_scan"
           android:title="@string/menu_scan"
-          android:orderInCategory="100"
+          android:orderInCategory="2"
           android:showAsAction="ifRoom|withText"/>
+    <item android:id="@+id/number_found"
+        android:title="0"
+        android:orderInCategory="4"
+        android:showAsAction="ifRoom"/>
     <item android:id="@+id/menu_stop"
           android:title="@string/menu_stop"
-          android:orderInCategory="101"
+          android:orderInCategory="3"
           android:showAsAction="ifRoom|withText"/>
 </menu>

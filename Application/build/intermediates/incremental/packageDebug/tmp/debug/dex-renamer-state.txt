@@ -1,4 +1,4 @@
-#Mon Nov 09 21:07:42 EST 2020
+#Wed Nov 11 22:37:53 EST 2020
 base.0=C\:\\Users\\Maria\\AndroidStudioProjects\\bluetooth-identifier\\Application\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out
 path.1=classes.dex
 renamed.1=classes2.dex

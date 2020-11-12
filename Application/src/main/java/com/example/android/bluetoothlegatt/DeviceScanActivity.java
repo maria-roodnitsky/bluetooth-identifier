@@ -74,6 +74,7 @@ public class DeviceScanActivity extends ListActivity {
     private final String LIST_UUID = "UUID";
 
     private Set<String> seenDevices = new HashSet<>();
+    private ArrayList<String> models_list = new ArrayList<>();
 
     // Intent filter for broadcast receiver
     private static IntentFilter makeGattUpdateIntentFilter() {
@@ -114,7 +115,10 @@ public class DeviceScanActivity extends ListActivity {
 
     private void grabData(String stringExtra) {
         if (stringExtra != null) {
-            models.add(stringExtra);
+            if (!models.contains(stringExtra)){
+                models.add(stringExtra);
+                models_list.add(stringExtra);
+            }
         }
         Log.d("FINALLY", models.toString() + " " + models.size());
     }
@@ -405,11 +409,19 @@ public class DeviceScanActivity extends ListActivity {
             }
 
             BluetoothDevice device = mLeDevices.get(i);
-            final String deviceName = device.getName();
-            if (deviceName != null && deviceName.length() > 0)
-                viewHolder.deviceName.setText(deviceName);
-            else
-                viewHolder.deviceName.setText(R.string.unknown_device);
+
+            if (models_list != null && models_list.size() > i){
+                Log.d("getView", models_list.get(i));
+
+                String[] arrOfStr = models_list.get(i).split(" ", 0);
+                String[] name = arrOfStr[0].split("\n", 0);
+                viewHolder.deviceName.setText(name[0]);
+            }
+//            final String deviceName = device.getName();
+//            if (deviceName != null && deviceName.length() > 0)
+//                viewHolder.deviceName.setText(deviceName);
+//            else
+//                viewHolder.deviceName.setText(R.string.unknown_device);
             viewHolder.deviceAddress.setText(device.getAddress());
 
             return view;
@@ -430,7 +442,10 @@ public class DeviceScanActivity extends ListActivity {
                     String device_name = device.getName();
 
                     String device_address = device.getAddress();
-                    if (rssi > -70 && result.isConnectable()) {
+                    if (rssi > -52 && result.isConnectable()) {
+
+                        Log.d("COUNT", String.valueOf(seenDevices.size()));
+
                         Log.d("RSSI", String.valueOf(rssi));
                         if (!seenDevices.contains(device_address)){
                             Log.d("MAC", "hey, we have NOT seen you!");
@@ -445,6 +460,7 @@ public class DeviceScanActivity extends ListActivity {
 //                        }
 
                         if (!connected.contains(device_address)) {
+                            Log.d("MAC", "connecting to" + device_address);
                             mBluetoothLeService.connect(device_address);
                             connected.add(device_address);
                         } else {
